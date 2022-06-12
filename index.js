@@ -84,4 +84,16 @@ function nombrePersona(nombre) {
     console.log("Mi nombre es " + nombre);
   }
   nombrePersona("Maria Legorreta");
-  
+
+
+
+// un promesa es un objeto devuelto al cuál se adjuntan funciones callback , marcan un antes y un después en la historia del desarrollo web.
+// caso de uso: tenemos un array  nos devuelven promesas, pueden ser exito o error. 
+var p1 = new Promise(function(resolve, reject) {
+    resolve('Success!');
+  });
+  p1.then(function(value) {
+    console.log(value);
+  }, function(reason) {
+    console.log(reason); 
+  });
