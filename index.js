@@ -46,3 +46,21 @@ const sumWithInitial = array2.reduce(
 
 console.log(sumWithInitial);
 
+
+// el findIndex ejecuta la función de callback una vez por cada índice del array hasta que encuentre uno donde callback devuelva un valor verdadero.  
+// caso de uso: tenemos un array con una serie de numeros de manera alatoria queremos encuentra  un elemento en el array que sea número primo de lo contrario este  devuelve -1. 
+
+function isPrime(element, index, array) {
+    var start = 2;
+    while (start <= Math.sqrt(element)) {
+      if (element % start < 1) {
+        return false;
+      } else {
+        start++;
+      }
+    }
+    return element > 1;
+  }
+  
+  console.log([20,26,32].findIndex(isPrime)); 
+  console.log([6,5,4,4].findIndex(isPrime)); 
