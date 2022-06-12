@@ -8,3 +8,14 @@ let modifiedArr = arr.map(function(element){
 });
 
 console.log(modifiedArr); // [4, 6, 8, 10]
+
+
+
+// el filter crea un nuevo array con todos los elementos que cumplan la condición implementada por la función.
+// caso de uso: tenemos un array con nombres de materias queremos obtener las materias que tengan una logitud mayor de 8 letras. 
+
+const words = ['español', 'ingles', 'histora', 'tecnologia', 'ciencias', 'formacion'];
+
+const result = words.filter(word => word.length > 8);
+
+console.log(result);
