@@ -19,3 +19,14 @@ const words = ['español', 'ingles', 'histora', 'tecnologia', 'ciencias', 'forma
 const result = words.filter(word => word.length > 8);
 
 console.log(result);
+
+
+
+// el find devuelve el valor del primer elemento del array que cumple la función de prueba proporcionada.
+// caso de uso: tenemos un array con una serie de numeros de manera alatoria queremos obtener el primer numero que sea mayor al numero 100.
+
+const array1 = [3, 65, 103, 130, 90];
+
+const found = array1.find(element => element > 100);
+
+console.log(found);
