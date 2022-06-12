@@ -30,3 +30,19 @@ const array1 = [3, 65, 103, 130, 90];
 const found = array1.find(element => element > 100);
 
 console.log(found);
+
+
+
+// el reduce  ejecuta una función reductora sobre cada elemento de un array, devolviendo como resultado un único valor.. 
+// caso de uso: tenemos un array con una serie de numeros de manera alatoria queremos obtener el resultado de la operacion (resta) como unico resultado.
+
+const array2 = [23, 54, 3, 90];
+
+const initialValue = 0;
+const sumWithInitial = array2.reduce(
+  (previousValue, currentValue) => previousValue - currentValue,
+  initialValue
+);
+
+console.log(sumWithInitial);
+
