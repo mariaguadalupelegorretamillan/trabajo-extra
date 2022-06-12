@@ -64,3 +64,14 @@ function isPrime(element, index, array) {
   
   console.log([20,26,32].findIndex(isPrime)); 
   console.log([6,5,4,4].findIndex(isPrime)); 
+
+
+// el replace devuelve una nueva cadena con algunas o todas las coincidencias de un patrón. 
+// caso de uso: tenemos un array con una cadena queremos que la primera palabra que coinsida sea remplazada. 
+
+const p = 'The pizza restaurant is delicious';
+
+console.log(p.replace('hamburger', 'people', 'pizza'));
+
+const regex = /Pizza/i;
+console.log(p.replace(regex, 'vegetable salad'));
