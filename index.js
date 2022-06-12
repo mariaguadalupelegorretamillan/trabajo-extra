@@ -75,3 +75,13 @@ console.log(p.replace('hamburger', 'people', 'pizza'));
 
 const regex = /Pizza/i;
 console.log(p.replace(regex, 'vegetable salad'));
+
+
+// el hoisting ocurre cuando declaramos una variable dentro de una función.
+// caso de uso: tenemos un array con una frase queremos que esta se junte con la seguda funcion. 
+
+function nombrePersona(nombre) {
+    console.log("Mi nombre es " + nombre);
+  }
+  nombrePersona("Maria Legorreta");
+  
